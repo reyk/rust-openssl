@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## [v0.10.13] - 2018-10-14
+
+### Fixed
+
+* Fixed a double-free in the `SslContextBuilder::set_get_session_callback` API.
+
+### Added
+
+* Added `SslContextBuilder::set_client_hello_callback`.
+* Added support for LibreSSL 2.8.1.
+* Added `EcdsaSig::from_der` and `EcdsaSig::to_der`.
+* Added PKCS#7 support.
+
 ## [v0.10.12] - 2018-09-13
 
 ### Fixed
@@ -262,7 +275,8 @@
 
 Look at the [release tags] for information about older releases.
 
-[Unreleased]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.12...master
+[Unreleased]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.13...master
+[v0.10.13]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.12...openssl-v0.10.13
 [v0.10.12]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.11...openssl-v0.10.12
 [v0.10.11]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.10...openssl-v0.10.11
 [v0.10.10]: https://github.com/sfackler/rust-openssl/compare/openssl-v0.10.9...openssl-v0.10.10
